@@ -16,7 +16,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PinterestIcon from "@mui/icons-material/Pinterest";
-import { StyledMenuLink } from "../header/Header.styled";
+import { StyledMenuLink } from "../header/components/Navigation.styled";
 
 const FooterComponent: React.FC = () => {
     return (

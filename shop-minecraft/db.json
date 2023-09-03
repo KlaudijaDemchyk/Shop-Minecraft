@@ -5,14 +5,14 @@
       "name": "Privilege",
       "image": "http://localhost:3000/Privilege.png",
       "products": [
-        { "id": 1, "name": "Lord", "image": "http://localhost:3000/Privilege/Lord.png", "price": 20 },
-        { "id": 2, "name": "Prince", "image": "http://localhost:3000/Privilege/Prince.png", "price": 20 },
-        { "id": 3, "name": "Wanderer", "image": "http://localhost:3000/Privilege/Wanderer.png", "price": 20 },
-        { "id": 4, "name": "Warrior", "image": "http://localhost:3000/Privilege/Warrior.png", "price": 20 },
-        { "id": 5, "name": "Orobas", "image": "http://localhost:3000/Privilege/Orobas.png", "price": 20 },
-        { "id": 6, "name": "100 Rubies", "image": "http://localhost:3000/Privilege/100Rubies.png", "price": 20 },
-        { "id": 7, "name": "250 Rubies", "image": "http://localhost:3000/Privilege/250Rubies.png", "price": 20 },
-        { "id": 8, "name": "500 Rubies", "image": "http://localhost:3000/Privilege/500Rubies.png", "price": 20 }
+        { "id": 100, "name": "Lord", "image": "http://localhost:3000/Privilege/Lord.png", "price": 20 },
+        { "id": 200, "name": "Prince", "image": "http://localhost:3000/Privilege/Prince.png", "price": 20 },
+        { "id": 300, "name": "Wanderer", "image": "http://localhost:3000/Privilege/Wanderer.png", "price": 20 },
+        { "id": 400, "name": "Warrior", "image": "http://localhost:3000/Privilege/Warrior.png", "price": 20 },
+        { "id": 500, "name": "Orobas", "image": "http://localhost:3000/Privilege/Orobas.png", "price": 20 },
+        { "id": 600, "name": "100 Rubies", "image": "http://localhost:3000/Privilege/100Rubies.png", "price": 20 },
+        { "id": 700, "name": "250 Rubies", "image": "http://localhost:3000/Privilege/250Rubies.png", "price": 20 },
+        { "id": 800, "name": "500 Rubies", "image": "http://localhost:3000/Privilege/500Rubies.png", "price": 20 }
       ]
     },
     {
@@ -20,11 +20,11 @@
       "name": "Rubies",
       "image": "http://localhost:3000/Rubies.png",
       "products": [
-        { "id": 1, "name": "100 Rubies", "image": "http://localhost:3000/Rubies/Rubies.png", "price": 10 },
-        { "id": 2, "name": "250 Rubies", "image": "http://localhost:3000/Rubies/Rubies.png", "price": 20 },
-        { "id": 3, "name": "500 Rubies", "image": "http://localhost:3000/Rubies/Rubies.png", "price": 40 },
-        { "id": 4, "name": "750 Rubies", "image": "http://localhost:3000/Rubies/Rubies.png", "price": 60 },
-        { "id": 5, "name": "1000 Rubies", "image": "http://localhost:3000/Rubies/Rubies.png", "price": 80 }
+        { "id": 801, "name": "100 Rubies", "image": "http://localhost:3000/Rubies/Rubies.png", "price": 10 },
+        { "id": 901, "name": "250 Rubies", "image": "http://localhost:3000/Rubies/Rubies.png", "price": 20 },
+        { "id": 107, "name": "500 Rubies", "image": "http://localhost:3000/Rubies/Rubies.png", "price": 40 },
+        { "id": 110, "name": "750 Rubies", "image": "http://localhost:3000/Rubies/Rubies.png", "price": 60 },
+        { "id": 120, "name": "1000 Rubies", "image": "http://localhost:3000/Rubies/Rubies.png", "price": 80 }
       ]
     },
     {
@@ -32,29 +32,29 @@
       "name": "Anarchy",
       "image": "http://localhost:3000/Anarchy.png",
       "products": [
-        { "id": 1, "name": "Above average", "image": "http://localhost:3000/Anarchy/Aboveaverage.png",  "price": 30 },
-        { "id": 2, "name": "Average", "image": "http://localhost:3000/Anarchy/Average.png",  "price": 30 },
-        { "id": 3, "name": "Big treasure box", "image": "http://localhost:3000/Anarchy/Bigtreasurebox.png",  "price": 30 },
-        { "id": 4, "name": "Cane", "image": "http://localhost:3000/Anarchy/Cane.png",  "price": 30 },
-        { "id": 5, "name": "Cow", "image": "http://localhost:3000/Anarchy/Cow.png",  "price": 30 },
-        { "id": 6, "name": "Creeper", "image": "http://localhost:3000/Anarchy/Creeper.png",  "price": 30 },
-        { "id": 7, "name": "Diamond", "image": "http://localhost:3000/Anarchy/Diamond.png",  "price": 30 },
-        { "id": 8, "name": "Efficiency 5", "image": "http://localhost:3000/Anarchy/Efficiency5.png",  "price": 30 },
-        { "id": 9, "name": "Magmo cub", "image": "http://localhost:3000/Anarchy/Magmocub.png",  "price": 30 },
-        { "id": 10, "name": "Pickaxe for efficiency 10", "image": "http://localhost:3000/Anarchy/Pickaxeforefficiency10.png",  "price": 30 },
-        { "id": 11, "name": "Pig zombie egg", "image": "http://localhost:3000/Anarchy/Pigzombieegg.png",  "price": 30 },
-        { "id": 12, "name": "Portal end", "image": "http://localhost:3000/Anarchy/Portalend.png",  "price": 30 },
-        { "id": 13, "name": "Protection 4", "image": "http://localhost:3000/Anarchy/Protection4.png",  "price": 30 },
-        { "id": 14, "name": "Sharpness 5", "image": "http://localhost:3000/Anarchy/Sharpness5.png",  "price": 30 },
-        { "id": 15, "name": "Small", "image": "http://localhost:3000/Anarchy/Small.png",  "price": 30 },
-        { "id": 16, "name": "Spawns", "image": "http://localhost:3000/Anarchy/Spawns.png",  "price": 30 },
-        { "id": 17, "name": "Strength 3", "image": "http://localhost:3000/Anarchy/Strength3(16).png",  "price": 30 },
-        { "id": 18, "name": "Totem of immortality", "image": "http://localhost:3000/Anarchy/Totemofimmortality.png",  "price": 30 },
-        { "id": 19, "name": "Villager`s eggns", "image": "http://localhost:3000/Anarchy/Villager`segg.png",  "price": 30 },
-        { "id": 20, "name": "Wings", "image": "http://localhost:3000/Anarchy/Wings.png",  "price": 30 },
-        { "id": 21, "name": "Witch egg", "image": "http://localhost:3000/Anarchy/Witchegg.png",  "price": 30 },
-        { "id": 22, "name": "Wither head", "image": "http://localhost:3000/Anarchy/Witherhead.png",  "price": 30 },
-        { "id": 23, "name": "Wither skeleton egg", "image": "http://localhost:3000/Anarchy/Witherskeletonegg.png",  "price": 30 }
+        { "id": 134, "name": "Above average", "image": "http://localhost:3000/Anarchy/Aboveaverage.png",  "price": 30 },
+        { "id": 236, "name": "Average", "image": "http://localhost:3000/Anarchy/Average.png",  "price": 30 },
+        { "id": 337, "name": "Big treasure box", "image": "http://localhost:3000/Anarchy/Bigtreasurebox.png",  "price": 30 },
+        { "id": 438, "name": "Cane", "image": "http://localhost:3000/Anarchy/Cane.png",  "price": 30 },
+        { "id": 539, "name": "Cow", "image": "http://localhost:3000/Anarchy/Cow.png",  "price": 30 },
+        { "id": 640, "name": "Creeper", "image": "http://localhost:3000/Anarchy/Creeper.png",  "price": 30 },
+        { "id": 745, "name": "Diamond", "image": "http://localhost:3000/Anarchy/Diamond.png",  "price": 30 },
+        { "id": 844, "name": "Efficiency 5", "image": "http://localhost:3000/Anarchy/Efficiency5.png",  "price": 30 },
+        { "id": 944, "name": "Magmo cub", "image": "http://localhost:3000/Anarchy/Magmocub.png",  "price": 30 },
+        { "id": 103, "name": "Pickaxe for efficiency 10", "image": "http://localhost:3000/Anarchy/Pickaxeforefficiency10.png",  "price": 30 },
+        { "id": 113, "name": "Pig zombie egg", "image": "http://localhost:3000/Anarchy/Pigzombieegg.png",  "price": 30 },
+        { "id": 612, "name": "Portal end", "image": "http://localhost:3000/Anarchy/Portalend.png",  "price": 30 },
+        { "id": 613, "name": "Protection 4", "image": "http://localhost:3000/Anarchy/Protection4.png",  "price": 30 },
+        { "id": 614, "name": "Sharpness 5", "image": "http://localhost:3000/Anarchy/Sharpness5.png",  "price": 30 },
+        { "id": 615, "name": "Small", "image": "http://localhost:3000/Anarchy/Small.png",  "price": 30 },
+        { "id": 616, "name": "Spawns", "image": "http://localhost:3000/Anarchy/Spawns.png",  "price": 30 },
+        { "id": 617, "name": "Strength 3", "image": "http://localhost:3000/Anarchy/Strength3(16).png",  "price": 30 },
+        { "id": 618, "name": "Totem of immortality", "image": "http://localhost:3000/Anarchy/Totemofimmortality.png",  "price": 30 },
+        { "id": 619, "name": "Villager`s eggns", "image": "http://localhost:3000/Anarchy/Villager`segg.png",  "price": 30 },
+        { "id": 620, "name": "Wings", "image": "http://localhost:3000/Anarchy/Wings.png",  "price": 30 },
+        { "id": 621, "name": "Witch egg", "image": "http://localhost:3000/Anarchy/Witchegg.png",  "price": 30 },
+        { "id": 622, "name": "Wither head", "image": "http://localhost:3000/Anarchy/Witherhead.png",  "price": 30 },
+        { "id": 623, "name": "Wither skeleton egg", "image": "http://localhost:3000/Anarchy/Witherskeletonegg.png",  "price": 30 }
       ]
     },
     {
@@ -62,10 +62,10 @@
       "name": "Miscellaneous",
       "image": "http://localhost:3000/Miscellaneous.png",
       "products": [
-        { "id": 1, "name": "Your Title", "image": "http://localhost:3000/Miscellaneous/YourTitle.png", "price": 30 },
-        { "id": 2, "name": "Recovery", "image": "http://localhost:3000/Miscellaneous/Recovery.png", "price": 30 },
-        { "id": 3, "name": "Razmyt", "image": "http://localhost:3000/Miscellaneous/Razmyt.png", "price": 30 },
-        { "id": 4, "name": "Unbanned", "image": "http://localhost:3000/Miscellaneous/Unbanned.png", "price": 30 }
+        { "id": 19, "name": "Your Title", "image": "http://localhost:3000/Miscellaneous/YourTitle.png", "price": 30 },
+        { "id": 20, "name": "Recovery", "image": "http://localhost:3000/Miscellaneous/Recovery.png", "price": 30 },
+        { "id": 30, "name": "Razmyt", "image": "http://localhost:3000/Miscellaneous/Razmyt.png", "price": 30 },
+        { "id": 40, "name": "Unbanned", "image": "http://localhost:3000/Miscellaneous/Unbanned.png", "price": 30 }
       ]
     }
   ]

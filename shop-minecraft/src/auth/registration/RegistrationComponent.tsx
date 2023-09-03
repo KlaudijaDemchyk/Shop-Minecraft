@@ -1,6 +1,5 @@
-// RegistrationComponent.tsx
-import React, { useState } from "react";
-import { registerWithEmail } from "../../firebase";
+import React from "react";
+import { useAuthFacade } from "./authFacade";
 import {
     StyledButton,
     RegistrationContainer,
@@ -12,17 +11,14 @@ import {
 import { Typography } from "@mui/material";
 
 const RegistrationComponent: React.FC = () => {
-    const [email, setEmail] = useState<string>("");
-    const [password, setPassword] = useState<string>("");
-    const [errorMessage, setErrorMessage] = useState<string | null>(null);
-
-    const handleRegister = () => {
-        registerWithEmail(email, password)
-            .then((result) => {})
-            .catch((error) => {
-                setErrorMessage(error.message);
-            });
-    };
+    const {
+        email,
+        setEmail,
+        password,
+        setPassword,
+        errorMessage,
+        handleRegister,
+    } = useAuthFacade();
 
     return (
         <RegistrationContainer>

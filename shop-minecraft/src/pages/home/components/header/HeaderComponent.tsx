@@ -1,76 +1,29 @@
-import React, { useEffect, useState } from "react";
-import {
-    Badge,
-    Toolbar,
-    Typography,
-    IconButton,
-    Menu,
-    MenuItem,
-} from "@mui/material";
-import { AccountCircle } from "@mui/icons-material";
+import React from "react";
+import { Toolbar, Typography } from "@mui/material";
 import {
     StyledBox,
     StyledAppBar,
     StyledContent,
     Logo,
-    MenuContainer,
     StyledButton,
-    StyledMenuLink,
     Title,
     StyledHell,
     StyledWorld,
     Discription,
     Wrap,
-    CartLinkContainer,
-    StyledShoppingCartIcon,
-    StyledLink,
-    UserContainer,
-    ActiveMenuLink,
 } from "./Header.styled";
-import { useCart } from "../../../../context/CartContext";
-import { useNavigate } from "react-router-dom";
-import { auth } from "../../../../firebase";
-import { User } from "firebase/auth";
-import { useLocation } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import { useHeaderFacade } from "./headerFacade";
 
 const HeaderComponent: React.FC = () => {
-    const { itemsCount } = useCart();
-    const navigate = useNavigate();
-    const [user, setUser] = useState<User | null>(null);
-    const location = useLocation();
-
-    useEffect(() => {
-        const unsubscribe = auth.onAuthStateChanged((user) => {
-            setUser(user);
-        });
-
-        return () => {
-            unsubscribe();
-        };
-    }, []);
-
-    const handleJoinUsClick = () => {
-        navigate("/register");
-    };
-
-    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-
-    const handleUserMenuClick = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleUserMenuClose = () => {
-        setAnchorEl(null);
-    };
-
-    const handleLogout = async () => {
-        try {
-            await auth.signOut();
-            navigate("/");
-        } catch (error) {
-            console.error("Error logging out:", error);
-        }
-    };
+    const {
+        user,
+        handleJoinUsClick,
+        handleUserMenuClick,
+        handleUserMenuClose,
+        handleLogout,
+        anchorEl,
+    } = useHeaderFacade();
 
     return (
         <StyledBox>
@@ -81,66 +34,14 @@ const HeaderComponent: React.FC = () => {
                         Hell Word.
                     </Typography>
 
-                    <MenuContainer>
-                        <StyledLink to="/">
-                            {location.pathname === "/" ? (
-                                <ActiveMenuLink variant="body1">
-                                    Home
-                                </ActiveMenuLink>
-                            ) : (
-                                <StyledMenuLink variant="body1">
-                                    Home
-                                </StyledMenuLink>
-                            )}
-                        </StyledLink>
-
-                        <StyledLink to="/about">
-                            <StyledMenuLink variant="body1">
-                                About Us
-                            </StyledMenuLink>
-                        </StyledLink>
-                        <StyledLink to="/cart">
-                            <CartLinkContainer variant="body1">
-                                Cart
-                                <Badge badgeContent={itemsCount} color="error">
-                                    <StyledShoppingCartIcon />
-                                </Badge>
-                            </CartLinkContainer>
-                        </StyledLink>
-
-                        {user ? (
-                            <div>
-                                <UserContainer>
-                                    <Typography variant="body1">
-                                        Welcome, {user.displayName}
-                                    </Typography>
-                                    <IconButton
-                                        color="inherit"
-                                        onClick={handleUserMenuClick}
-                                    >
-                                        <AccountCircle />
-                                    </IconButton>
-                                </UserContainer>
-                                <Menu
-                                    anchorEl={anchorEl}
-                                    open={Boolean(anchorEl)}
-                                    onClose={handleUserMenuClose}
-                                >
-                                    <MenuItem onClick={handleLogout}>
-                                        Logout
-                                    </MenuItem>
-                                </Menu>
-                            </div>
-                        ) : (
-                            <StyledButton
-                                variant="contained"
-                                color="primary"
-                                onClick={handleJoinUsClick}
-                            >
-                                Join Us
-                            </StyledButton>
-                        )}
-                    </MenuContainer>
+                    <Navigation
+                        user={user}
+                        handleUserMenuClick={handleUserMenuClick}
+                        handleLogout={handleLogout}
+                        handleJoinUsClick={handleJoinUsClick}
+                        anchorEl={anchorEl}
+                        handleUserMenuClose={handleUserMenuClose}
+                    />
                 </Toolbar>
             </StyledAppBar>
 
@@ -155,7 +56,7 @@ const HeaderComponent: React.FC = () => {
                         arena and artificial intelligence.
                     </Discription>
                     <StyledButton variant="contained" color="primary">
-                        Go to Minecraft
+                        Contact Us
                     </StyledButton>
                 </Wrap>
             </StyledContent>

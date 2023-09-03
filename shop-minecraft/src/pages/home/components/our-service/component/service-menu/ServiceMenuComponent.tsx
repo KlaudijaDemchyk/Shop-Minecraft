@@ -1,6 +1,7 @@
 import React from "react";
 import { CategoryLink, ImageWrapper } from "../../OurService.styled";
 import { ServiceMenuProps } from "../types";
+import { Typography } from "@mui/material";
 
 const ServiceMenuComponent: React.FC<ServiceMenuProps> = ({
     categories,
@@ -18,7 +19,10 @@ const ServiceMenuComponent: React.FC<ServiceMenuProps> = ({
                     <CategoryLink
                         onClick={() => setSelectedCategory(category.name)}
                     >
-                        {category.name} <span>&rarr;</span>
+                        <Typography variant="h5">{category.name}</Typography>
+                        <span>
+                            {selectedCategory === category.name ? "↓" : "→"}
+                        </span>
                     </CategoryLink>
                 </ImageWrapper>
             ))}

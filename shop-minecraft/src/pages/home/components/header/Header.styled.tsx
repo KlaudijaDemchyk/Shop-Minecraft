@@ -1,7 +1,5 @@
 import { styled } from "@mui/material/styles";
 import { Box, AppBar, Button, Typography } from "@mui/material";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { Link } from "react-router-dom";
 
 const StyledBox = styled(Box)({
     height: "100vh",
@@ -32,25 +30,11 @@ const Logo = styled("img")({
     paddingRight: 10,
 });
 
-const MenuContainer = styled(Box)({
-    marginLeft: "auto",
-    display: "flex",
-    alignItems: "center",
-});
-
 const StyledButton = styled(Button)({
     marginLeft: "1rem",
     background:
         "linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgb(162.56, 9.75, 0) 96.88%)",
     borderRadius: 5,
-});
-
-const StyledMenuLink = styled(Typography)({
-    marginRight: "1.5rem",
-    cursor: "pointer",
-    "&:hover": {
-        textDecoration: "underline",
-    },
 });
 
 const Title = styled(Typography)({
@@ -90,49 +74,15 @@ const Discription = styled(Typography)({
     fontWeight: 500,
 });
 
-const CartLinkContainer = styled(StyledMenuLink)({
-    display: "inline-flex",
-    alignItems: "center",
-});
-
-const StyledShoppingCartIcon = styled(ShoppingCartIcon)({
-    marginLeft: "5px",
-});
-
-const StyledLink = styled(Link)`
-    color: white;
-    text-decoration: none; /* Remove underline */
-
-    &:hover {
-        color: red;
-    }
-`;
-
-const UserContainer = styled(Box)({
-    display: "flex",
-    alignItems: "center",
-});
-
-const ActiveMenuLink = styled(StyledMenuLink)({
-    color: "red",
-});
-
 export {
     StyledBox,
     StyledAppBar,
     StyledContent,
     Logo,
-    MenuContainer,
-    StyledButton,
-    StyledMenuLink,
     Title,
     StyledHell,
     StyledWorld,
     Discription,
     Wrap,
-    CartLinkContainer,
-    StyledShoppingCartIcon,
-    StyledLink,
-    UserContainer,
-    ActiveMenuLink,
+    StyledButton,
 };

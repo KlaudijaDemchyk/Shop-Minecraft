@@ -34,15 +34,9 @@ export function signInWithGoogle(): Promise<UserCredential> {
 };
 
 export function registerWithEmail(email: string, password: string): Promise<UserCredential> {
-    return createUserWithEmailAndPassword(auth, email, password)
-        .then((result) => {
-            return result; 
-        })
-        .catch((error) => {
-            console.error(`Error during registration: ${error.message}`);
-            throw error;
-        });
+    return createUserWithEmailAndPassword(auth, email, password);
 };
+
 
 export function signInWithEmail(email: string, password: string): Promise<UserCredential> {
     return signInWithEmailAndPassword(auth, email, password)

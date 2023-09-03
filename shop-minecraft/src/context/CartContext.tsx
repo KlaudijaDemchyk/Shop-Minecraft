@@ -7,13 +7,14 @@ interface CartItemType {
     name: string;
     price: number;
     image?: string;
+    id?: string;
 }
 
 interface CartContextType {
     cartItems: CartItemType[];
     addItemToCart: (item: CartItemType) => void;
     removeItemFromCart: (itemName: string) => void;
-    itemsCount: number; // This will now be a derived value, not a state
+    itemsCount: number;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);

@@ -30,6 +30,9 @@ const ImageWrapper = styled(Box)<{ active: boolean }>((props) => ({
 }));
 
 const CategoryLink = styled(Box)({
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     marginTop: "0.5rem",
     cursor: "pointer",
     color: "white",
@@ -37,7 +40,8 @@ const CategoryLink = styled(Box)({
         marginLeft: "0.5rem",
     },
     "&:hover": {
-        textDecoration: "underline",
+        color: "red",
+        textDecoration: "none",
     },
 });
 
